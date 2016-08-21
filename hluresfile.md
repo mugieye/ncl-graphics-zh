@@ -6,7 +6,7 @@
 * X11窗口的默认大小 (512 x 512)
 * PNG图片的默认大小 (1024 x 1024)
 
-[查看[这里][v610]关于NCL V6.1.0版本（2012 10月发布）图表默认设置的变更]。
+[查看[这里](#jump)关于NCL V6.1.0版本（2012 10月发布）图表默认设置的变更]。
 
 要创建hluresfile文件，查看[示例][hlfile]，重命名为".hluresfile"，编辑文件内容设置想要的效果，然后把该文件放到home目录。
 
@@ -65,7 +65,7 @@
 !==========================================
 ```
 
-[v610]: **NCL V6.1.0 图表默认设置变更**
+### <V6.1.0 id="contact_form"></V6.1.0>Contact form: **NCL V6.1.0 图表默认设置变更**
 
 在NCL 6.1.0版本中，图表的默认设置有一些改动。
 
@@ -82,4 +82,3 @@
 * ["helvetica"][http://www.ncl.ucar.edu/Document/Graphics/Images/font21.png]字体
 * [256-color][http://www.ncl.ucar.edu/Document/Graphics/ColorTables/ncl_default.shtml]色标
 * 波浪号('~')用于[function code][http://www.ncl.ucar.edu/Document/Graphics/function_code.shtml]
-

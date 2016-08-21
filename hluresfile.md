@@ -8,7 +8,7 @@
 
 [查看[这里](#jump)关于NCL V6.1.0版本（2012 10月发布）图表默认设置的变更]。
 
-要创建hluresfile文件，查看[示例][hlfile]，重命名为".hluresfile"，编辑文件内容设置想要的效果，然后把该文件放到home目录。
+要创建hluresfile文件，查看[示例][http://www.ncl.ucar.edu/Document/Graphics/hluresfile]，重命名为".hluresfile"，编辑文件内容设置想要的效果，然后把该文件放到home目录。
 
 如果有什么原因你不想放到home目录，可以放到任何目录，然后设置环境变量NCARG_USRRESFILE的值为该文件的绝对路径（包含文件名）。
 

@@ -1,6 +1,6 @@
 **.hluresfile**
 
-[".hluresfile"][http://www.ncl.ucar.edu/Document/Graphics/hluresfile]文件用于改变NCL图表的默认设置，比如：
+[".hluresfile"][http://www.ncl.ucar.edu/Document/Graphics/hluresfile] 文件用于改变NCL图表的默认设置，比如：
 
 * 默认色标
 * X11窗口的默认大小 (512 x 512)
@@ -8,7 +8,7 @@
 
 [查看[这里](#jump)关于NCL V6.1.0版本（2012 10月发布）图表默认设置的变更]。
 
-要创建hluresfile文件，查看[示例][http://www.ncl.ucar.edu/Document/Graphics/hluresfile]，重命名为".hluresfile"，编辑文件内容设置想要的效果，然后把该文件放到home目录。
+要创建hluresfile文件，查看[示例][http://www.ncl.ucar.edu/Document/Graphics/hluresfile] ，重命名为".hluresfile"，编辑文件内容设置想要的效果，然后把该文件放到home目录。
 
 如果有什么原因你不想放到home目录，可以放到任何目录，然后设置环境变量NCARG_USRRESFILE的值为该文件的绝对路径（包含文件名）。
 
@@ -74,13 +74,13 @@
 在NCL 6.0.0及早期版本中，如下设置有效：
 
 * [black background, white foreground][http://www.ncl.ucar.edu/Document/Graphics/Images/blackwhite.png]
-* ["times-roman"][http://www.ncl.ucar.edu/Document/Graphics/Images/font0.png]字体
-* [32-color][http://www.ncl.ucar.edu/Document/Graphics/ColorTables/default.shtml]色标
+* ["times-roman"][http://www.ncl.ucar.edu/Document/Graphics/Images/font0.png] 字体
+* [32-color][http://www.ncl.ucar.edu/Document/Graphics/ColorTables/default.shtml] 色标
 * 冒号(':')用于[function code][http://www.ncl.ucar.edu/Document/Graphics/function_code.shtml]
 
 在NCL 6.1.0及后续版本中，如下设置有效：
 
 * [white background, black foreground][http://www.ncl.ucar.edu/Document/Graphics/Images/whiteblack.png]
-* ["helvetica"][http://www.ncl.ucar.edu/Document/Graphics/Images/font21.png]字体
-* [256-color][http://www.ncl.ucar.edu/Document/Graphics/ColorTables/ncl_default.shtml]色标
+* ["helvetica"][http://www.ncl.ucar.edu/Document/Graphics/Images/font21.png] 字体
+* [256-color][http://www.ncl.ucar.edu/Document/Graphics/ColorTables/ncl_default.shtml] 色标
 * 波浪号('~')用于[function code][http://www.ncl.ucar.edu/Document/Graphics/function_code.shtml]

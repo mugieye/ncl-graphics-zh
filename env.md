@@ -19,3 +19,149 @@
 >>默认值：视操作系统不同，这个值可能已经设置。
 
 **GRAPHCAP（关键字graphcap)**
+>这个环境变量用于选择graphcap供ctrans使用。
+
+>默认值：无
+
+>如果没有设置这个环境变量，则必须使用command line flags
+
+**NCARG_GKS_OUTPUT（关键字 gks_output）**
+>用于指示ncgm workstation输出的元文件(metafile)的默认文件名。
+
+>默认值：gmeta
+
+**NCARG_GKS_PSOUTPUT（无关键字）**
+>用于指示PS workstation输出的PostScript文件的默认文件名。Stdout也适用。
+
+>默认值：gmeta1.ps
+
+**NCARG_USRRESFILE（关键字 usrresfile）**
+>用于定义用户的HLU资源文件，这种文件用于定义所有HLU程序的资源。
+
+>默认值：~/.hluresfile<br/>
+>**备注：**这个默认值可在编译时配置，所以系统管理员可以更改它。
+
+**NCARG_ROOT（关键字 root）**
+>用于指示NCL安装的根目录。如果正确设置后，与该变量关联的别的环境变量也会定义好。
+
+>默认值：/usr/local<br/>
+>**备注：**这个默认值可在编译时配置，所以系统管理员可以更改它。
+
+**NCARG_BIN（关键字 bin）**
+>用于指示NCL的bin目录位置。
+
+>默认值：$(NCARG_ROOT)/bin
+
+**NCARG_MAN（关键字 man）**
+>用于指示NCL的man页面位置。
+
+>默认值：$(NCARG_ROOT)/man
+
+**NCARG_INCLUDE（关键字 include）**
+>用于指示NCL包含文件的位置。
+
+>默认值：$(NCARG_ROOT)/include
+
+**NCARG_LIB（关键字 lib）**
+>用于指示NCL库的位置。
+
+>默认值：$(NCARG_ROOT)/lib
+
+**NCARG_NCARG（关键字 ncarg）**
+>用于指示附加文件的位置，比如数据库，资源文件等等。
+
+>默认值：$(NCARG_LIB)/ncarg
+
+**NCARG_COLORMAP_PATH（无关键字）**
+>用于设置color tables位置的路径列表，包括NCL标准色标。这个变量可以设置自定义的color tables目录，参见[创建自定义色标](http://www.ncl.ucar.edu/Document/Graphics/create_color_table.shtml)
+
+>默认值：$(NCARG_NCARG)/colormaps
+
+**NCARG_COLORMAPS（关键字 colormaps）**
+>用于指示NCL色标的默认位置。
+
+>默认值：$(NCARG_NCARG)/colormaps
+
+**NCARG_RANGS（关键字 rangs）**
+>用于指示RANGS/GSHHS数据库的位置。这个数据库体积大，并没有默认包含在NCL中。
+
+>默认值：$(NCARG_NCARG)/rangs
+
+**NCARG_CONFIG（关键字 config）**
+>用于指示NCL配置文件的位置。（只有从源码安装的NCL才有这些配置文件，二进制安装的NCL不需要）
+
+>默认值：$(NCARG_NCARG)/config
+
+**NCARG_DATABASE（关键字 database）**
+>用于指示NCL数据库文件的位置(map databases etc)
+
+>默认值：$(NCARG_NCARG)/database
+
+**NCARG_DATA（关键字 data）**
+>用于指示用于NCL和HLU示例的数据文件位置。
+
+>默认值：$(NCARG_NCARG)/data
+
+**NCARG_FONTCAPS（关键字 fontcaps）**
+>用于指示fontcaps的位置。
+
+>默认值：$(NCARG_NCARG)/fontcaps
+
+**NCARG_GRAPHCAPS（关键字 graphcaps）**
+>用于指示graphcaps的位置。
+
+>默认值：$(NCARG_NCARG)/graphcaps
+
+**NCARG_HLUEX（关键字 hluex）**
+>用于指示Fortran HLU示例的位置。
+
+>默认值：$(NCARG_NCARG)/hluex
+
+**NCARG_NCLEX（关键字 nclex）**
+>用于指示NCL示例的位置。
+
+>默认值：$(NCARG_NCARG)/nclex
+
+**NCARG_RESFILES（关键字 resfiles）**
+>用于指示NCL和HLU示例的资源文件位置。
+
+>默认值：$(NCARG_NCARG)/resfiles
+
+**NCARG_EXAMPLES（关键字 examples）**
+>用于指示ow-level示例的位置（可能不包含在二进制的NCL中）。
+
+>默认值：$(NCARG_NCARG)/examples
+
+**NCARG_TESTS（关键字 tests）**
+>用于指示low-level测试示例的位置（可能不包含在二进制的NCL中）。
+
+>默认值：$(NCARG_NCARG)/tests
+
+**NCARG_TUTORIAL（关键字 tutorial）**
+>用于指示low-level教程的位置（可能不包含在二进制的NCL中）。
+
+>默认值：$(NCARG_NCARG)/tutorial
+
+**NCARG_XAPP（关键字 xapp）**
+>用于指示NCL X程序资源文件的位置。
+
+>默认值：$(NCARG_NCARG)/xapp
+
+**NCARG_SYSRESFILE（关键字 sysresfile）**
+>用于指示系统资源文件的位置。
+
+>默认值：$(NCARG_NCARG)/sysresfile
+
+**NCARG_SYSAPPRES（关键字 sysappres）**
+>用于指示NCL Application资源文件的位置。
+
+>默认值：$(NCARG_NCARG)/sysappres
+
+**NCL_DEF_LIB_DIR（无关键字）**
+>如果设置这个环境变量为一个合法的路径名，NCL将搜索该目录下的动态共享对象（*.so文件）供NCL动态加载。这些*.so文件是运行[WRAPIT](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml)或"wrapit77"创建的。
+
+>也就是说，为了调用新函数或进程，当用["external"](http://www.ncl.ucar.edu/Document/Manuals/Ref_Manual/NclStatements.shtml#external)声明载入*.so文件时，无需预设SO_NAME::给被引用的函数或进程。NCL会尝试载入被NCL_DEF_LIB_DIR指定的目录下的所有文件，如果有文件不是共享对象，你会收到警告信息。
+
+>更多信息，参见[WRAPIT](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)文档的[用环境变量加载共享对象](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)部分，或参考手册的[载入默认脚本和共享库](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)部分。
+
+>默认值：无

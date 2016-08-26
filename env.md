@@ -162,6 +162,48 @@
 
 >也就是说，为了调用新函数或进程，当用["external"](http://www.ncl.ucar.edu/Document/Manuals/Ref_Manual/NclStatements.shtml#external)声明载入*.so文件时，无需预设SO_NAME::给被引用的函数或进程。NCL会尝试载入被NCL_DEF_LIB_DIR指定的目录下的所有文件，如果有文件不是共享对象，你会收到警告信息。
 
->更多信息，参见[WRAPIT](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)文档的[用环境变量加载共享对象](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)部分，或参考手册的[载入默认脚本和共享库](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)部分。
+>更多信息，参见[WRAPIT](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)文档的[用环境变量加载共享对象](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)章节，或参考手册的[载入默认脚本和共享库](http://www.ncl.ucar.edu/Document/Tools/WRAPIT.shtml#SetEnvironmentVariable)章节。
 
 >默认值：无
+
+**NCL_DEF_SCRIPTS_DIR（无关键字）**
+>如果设置这个环境变量为一个合法的路径名，NCL将尝试加载该目录下所有".ncl"后缀的文件，就像用["load"](http://www.ncl.ucar.edu/Document/Manuals/Ref_Manual/NclStatements.shtml#load)声明调用一样。
+
+>这些文件按UNIX目录结构顺序加载，所以如果某个文件依赖于另外一个还未载入的文件，你就会遇到问题。
+
+>参考手册["载入默认脚本和共享库"](http://www.ncl.ucar.edu/Document/Manuals/Ref_Manual/NclFormatSupport.shtml#GRIB1-user-defined-parameter-tables)章节获取更多信息。
+
+>默认值：无
+
+**NCL_GRIB_PTABLE_PATH（无关键字）**
+>NCL GRIB参数表文件是定义一个或多个参数表供NCL读取GRIB文件的文本文件。设置该变量为参数表文件路径，NCL在第一次打开GRIB文件时会分析、合并参数表文件。并且，NCL_GRIB_PTABLE_PATH环境变量也可以设置为一个目录，则该目录下的所有'.gtb'后缀文件会被当做参数表文件打开。
+
+>参考手册["用户定义的GRIB1参数表"](http://www.ncl.ucar.edu/Document/Manuals/Ref_Manual/NclFormatSupport.shtml#GRIB1-user-defined-parameter-tables)章节获取更多信息。
+
+>默认值：无
+
+**NCL_NO_SYSTEM_PAGER（无关键字）**
+>默认的，[system](http://www.ncl.ucar.edu/Document/Functions/Built-in/system.shtml)为方便用户阅读而分页显示内容。该变量的值用于设定分页，如果没设置，则用“更多”做分页。如果不想用”更多“做分页，设定该环境变量可关闭分页。
+
+>默认值：无
+
+**NIO_GRIB2_CODETABLES（关键字　grib2_codetables）**
+>用于指示[GRIB2代码表](http://www.ncl.ucar.edu/Document/Manuals/Ref_Manual/NclFormatSupport.shtml)位置。
+
+>默认值：$NCARG_ROOT/lib/ncarg/grib2_codetables
+
+**PAGER（无关键字）**
+>这不是特定的NCL环境变量，而是用于别的UNIX程序。在NCL中，这个参数定义[print](http://www.ncl.ucar.edu/Document/Functions/Built-in/print.shtml)和[system](http://www.ncl.ucar.edu/Document/Functions/Built-in/system.shtml)的输出如何分页。
+
+>默认值： "more"
+
+**PSADILOOKUP_PATH（无关键字）**
+>用于指示"psadilookup.dat"文件的位置，该文件被用于[rip_cape_3d](http://www.ncl.ucar.edu/Document/Functions/Built-in/rip_cape_3d.shtml)和[rip_cape_2d](http://www.ncl.ucar.edu/Document/Functions/Built-in/rip_cape_2d.shtml)函数。
+
+>默认值：$NCARG_ROOT/lib/ncarg/data/asc
+
+**TMPDIR（关键字　tmp）**
+>用于指示NCL临时文件目录。
+
+>默认值：/tmp
+>>**备注：**这个默认值可在编译时配置，所以系统管理员可以更改它。
